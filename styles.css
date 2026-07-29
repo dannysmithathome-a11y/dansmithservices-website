@@ -529,6 +529,14 @@ cursor:pointer;
 width:100%;
 text-align:center;
 font-size:14.5px;
+background:var(--teal);
+color:var(--white);
+transition:background .18s ease, transform .15s ease, box-shadow .15s ease;
+}
+.btn-submit:hover{
+background:var(--teal-dark);
+transform:translateY(-1px);
+box-shadow:0 8px 18px rgba(20,35,44,0.16);
 }
 .form-note{
 font-size:12.5px;
