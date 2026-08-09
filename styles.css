@@ -64,8 +64,7 @@ outline-offset:3px;
 position:sticky;
 top:0;
 z-index:50;
-background:rgba(243,242,237,0.88);
-backdrop-filter:blur(8px);
+background:rgba(243,242,237,0.97);
 border-bottom:1px solid var(--line);
 }
 .site-header.on-hero{
