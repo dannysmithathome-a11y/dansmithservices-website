@@ -414,11 +414,27 @@ margin:0 auto;
 padding:48px 32px 96px;
 }
 .personal-note .placeholder-card{ text-align:left; }
+.personal-note .note-card{
+border:1px solid var(--line);
+border-radius:12px;
+background:var(--white);
+padding:32px;
+display:grid;
+grid-template-columns:1fr 1.15fr;
+gap:36px;
+align-items:center;
+}
+.note-text .eyebrow{ display:block; margin-bottom:12px; }
+.note-text p{ margin:0; font-size:16px; line-height:1.7; color:var(--slate); }
+.note-photos{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.note-photos figure{ margin:0; border-radius:10px; overflow:hidden; line-height:0; box-shadow:0 2px 12px rgba(20,35,44,.08); }
+.note-photos img{ width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; display:block; }
 
 @media (max-width: 760px){
 .about-story{ grid-template-columns:1fr; }
 .portrait{ max-width:200px; }
 .stat-grid{ grid-template-columns:1fr; }
+.personal-note .note-card{ grid-template-columns:1fr; padding:24px; gap:24px; }
 }
 
 /* ---------------- Footer ---------------- */
