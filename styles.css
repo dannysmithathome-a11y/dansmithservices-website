@@ -347,14 +347,31 @@ max-width:var(--container);
 margin:0 auto;
 padding:28px 32px 8px;
 display:grid;
-grid-template-columns:repeat(4, 1fr);
+grid-template-columns:repeat(2, 1fr);
 gap:20px;
 }
 .stat-card{
-border:1px dashed var(--line);
+border:1px solid var(--line);
 border-radius:10px;
-padding:26px 20px;
+padding:26px 22px;
 text-align:left;
+background:var(--white,#fff);
+}
+.stat-card .stat-icon{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:42px;
+height:42px;
+border-radius:9px;
+background:rgba(30,110,103,.09);
+color:var(--teal);
+margin-bottom:14px;
+}
+.stat-card .stat-icon svg{
+width:22px;
+height:22px;
+display:block;
 }
 .stat-card .stat-number{
 font-family:var(--font-mono);
@@ -365,7 +382,10 @@ display:block;
 margin-bottom:8px;
 }
 .stat-card .stat-label{
-font-size:13.5px;
+display:block;
+margin:0;
+font-size:14.5px;
+line-height:1.6;
 color:var(--slate);
 }
 
@@ -400,7 +420,7 @@ padding:48px 32px 96px;
 @media (max-width: 760px){
 .about-story{ grid-template-columns:1fr; }
 .portrait-placeholder{ max-width:180px; }
-.stat-grid{ grid-template-columns:1fr 1fr; }
+.stat-grid{ grid-template-columns:1fr; }
 }
 
 /* ---------------- Footer ---------------- */
