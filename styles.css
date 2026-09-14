@@ -295,6 +295,28 @@ font-size:15px;
 }
 .placeholder-card strong{ color:var(--ink); display:block; margin-bottom:8px; font-family:var(--font-display); font-size:17px; }
 
+/* ---------------- Services: list + closing ---------------- */
+.svc-list{
+max-width:var(--container);
+margin:0 auto;
+padding:26px 32px 10px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px 40px;
+align-items:start;
+}
+.svc-item{ border-left:2px solid var(--teal); padding-left:18px; }
+.svc-item h3{ font-size:16.5px; font-weight:700; margin:0 0 6px; color:var(--ink); }
+.svc-item p{ margin:0; font-size:14.5px; line-height:1.65; color:var(--slate); }
+.svc-closing{ max-width:var(--container); margin:0 auto; padding:64px 32px 100px; }
+.closing-card{ border:1px solid var(--line); border-radius:12px; background:var(--white); padding:40px; }
+.closing-card .eyebrow{ color:var(--brass); display:block; margin-bottom:12px; }
+.closing-card h2{ font-size:24px; font-weight:800; max-width:30ch; }
+.proof-list{ list-style:none; margin:26px 0 0; padding:0; display:grid; gap:14px; }
+.proof-list li{ font-size:15px; line-height:1.65; color:var(--slate); border-left:2px solid var(--brass); padding-left:16px; }
+.proof-list strong{ color:var(--ink); }
+.pull-quote{ font-family:var(--font-display); font-size:19px; font-weight:700; color:var(--teal); margin:30px 0 26px; }
+
 /* ---------------- About: story layout ---------------- */
 .about-story{
 max-width:var(--container);
@@ -434,6 +456,8 @@ align-items:center;
 .about-story{ grid-template-columns:1fr; }
 .portrait{ max-width:200px; }
 .stat-grid{ grid-template-columns:1fr; }
+.svc-list{ grid-template-columns:1fr; }
+.closing-card{ padding:26px; }
 .personal-note .note-card{ grid-template-columns:1fr; padding:24px; gap:24px; }
 }
 
