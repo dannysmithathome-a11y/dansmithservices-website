@@ -622,3 +622,63 @@ text-align:center;
 .form-row{ flex-direction:column; gap:0; }
 .contact-form{ padding:32px 22px; }
 }
+
+
+/* ---------------- Book a Call ---------------- */
+.booking-section{
+max-width:var(--container);
+margin:0 auto;
+padding:72px 32px 110px;
+}
+.booking-wrap{
+max-width:640px;
+margin:0 auto;
+padding:0;
+display:grid;
+gap:28px;
+}
+.booking-info-card{
+border:1px solid var(--line);
+border-radius:10px;
+background:var(--white);
+padding:32px 36px;
+}
+.booking-info-card .eyebrow{ color:var(--teal); display:block; margin-bottom:14px; }
+.booking-points{
+list-style:none;
+margin:0;
+padding:0;
+display:grid;
+gap:12px;
+}
+.booking-points li{
+font-size:15px;
+line-height:1.6;
+color:var(--slate);
+border-left:2px solid var(--brass);
+padding-left:16px;
+}
+.booking-points strong{ color:var(--ink); }
+.booking-embed-card{
+border:1px solid var(--line);
+border-radius:10px;
+background:var(--white);
+padding:36px;
+text-align:center;
+}
+.booking-divider{
+text-align:center;
+padding-top:8px;
+}
+.booking-divider .eyebrow{ color:var(--brass); display:block; margin-bottom:10px; }
+.booking-divider p{
+font-size:14.5px;
+color:var(--slate);
+max-width:46ch;
+margin:0 auto;
+}
+
+@media (max-width:600px){
+.booking-info-card,
+.booking-embed-card{ padding:26px 22px; }
+}
